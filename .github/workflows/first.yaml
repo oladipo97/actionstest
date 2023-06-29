@@ -15,6 +15,8 @@ jobs:
           terraform_version: 1.1.9
       - name: Terraform init
         run: terraform init
+      - name: Terraform validate
+        run:  terraform validate
       - name: Multi line string
         run: |
           pwd
